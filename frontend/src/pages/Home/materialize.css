@@ -5760,7 +5760,7 @@ body.keyboard-focused .dropdown-content li:focus {
   margin: auto;
   overflow-y: auto;
   border-radius: 2px;
-  will-change: top, opacity;
+  will-change: top;
 }
 
 .modal:focus {
@@ -9083,55 +9083,88 @@ input[type=range]::-ms-thumb {
     margin-top: 1.2rem;
   }
 }
+
+
 .logostudium{
   font-family: "trebuchet MS" !important;
   font-size: 40px !important;
-  font-weight: bold !important;
+  font-weight: bolder !important;
   margin-left:  40px !important;
 }
+.semsombra{
+  box-shadow:  unset !important;
+}
 
-    .semsombra{
-      box-shadow:  unset !important;
-    }
-    .cardminimo{
-      min-height: 300px !important ;
-    }
-    .cardRounded{
-    border-radius: 15px !important;
 
-    }
-   .cardbordainferior{
-       height: 20px;
-    border-bottom-left-radius: 15px !important;
-    border-bottom-right-radius: 15px !important;
-  }
-    .btnCadastrar{
-      height: 40px !important;
-      text-align: center !important;
-    }
-    .cardalinhamento{
-         display: -webkit-flex;
-      display: flex;
-           -webkit-align-items: center;
-           align-items: center;
-           -webkit-justify-content: center;
-           justify-content: center;
-    
-    }
-    .textDestaque{
-      font-family: "trebuchet MS" !important;
+.logostudiumLogin{
+  font-family: "trebuchet MS" !important;
   font-size: 40px !important;
   font-weight: bold !important;
-    }
-    .sejaumAluno{
-      vertical-align: middle !important;
-    }
-    .rodapeBackground{
-      background-image: url("../../assets/homeFooter.png") !important;
-      background-color: unset !important;
-      height: 600px !important;
-      background-size: cover;
- }
- .rodapeAlinhamento{
-   margin-top: 300px !important;
- }
+  color: #9575cd !important;
+}
+
+.textoPadrao{
+  font-family: "trebuchet MS" !important;
+  font-size: 14px !important;
+  color:#9575cd !important;
+}
+.corPadrao{
+ background-color: #9575cd !important;
+}
+
+
+
+
+.cardminimo{
+min-height: 300px !important ;
+}
+.cardRounded{
+border-radius: 15px !important;
+
+}
+.cardbordainferior{
+height: 20px;
+border-bottom-left-radius: 15px !important;
+border-bottom-right-radius: 15px !important;
+}
+.btnCadastrar{
+height: 40px !important;
+text-align: center !important;
+}
+.cardalinhamento{
+ display: -webkit-flex;
+ display: flex;
+ -webkit-align-items: center;
+ align-items: center;
+ -webkit-justify-content: center;
+ justify-content: center;
+
+}
+.textDestaque{
+font-family: "trebuchet MS" !important;
+font-size: 40px !important;
+font-weight: bold !important;
+}
+.sejaumAluno{
+vertical-align: middle !important;
+}
+.rodapeBackground{
+ background-image: url("../../assets/homeFooter.png") !important;
+ background-color: unset !important;
+ height: 600px !important;
+ background-size: cover;
+}
+.rodapeAlinhamento{
+ margin-top: 300px !important;
+}
+
+
+.modalLogin{
+ width: 450px !important;
+}
+.esqueciminhasenha{
+ margin-bottom: 0px !important;
+}
+.btnLogin{
+ width: 70% !important;
+}
