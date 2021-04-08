@@ -27,11 +27,7 @@ export default function Home() {
           <div class="nav-wrapper  deep-purple lighten-2">
             <a href="#!" class="brand-logo logostudium">studium.</a>
             <ul class="right hide-on-med-and-down">
-              <li><a href="sass.html">CURSOS</a></li>
-              <li><button href="badges.htlm" onClick={() => (document).ready(function () {
-      ('.modal').modal();
-    })}>Entrar</button>
-              </li>
+              <Link to="/Login" class="waves-effect waves-light btn btnCadastrar  deep-purple darken-4">ENTRAR</Link>
               <Link to="/SignUp" class="waves-effect waves-light btn btnCadastrar  deep-purple darken-4">CADASTRAR</Link>
             </ul>
           </div>

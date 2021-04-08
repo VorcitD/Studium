@@ -8,14 +8,15 @@ module.exports={
     },
 
     async create(request, response){
-        const {name,description,author,price,numClasses} = request.body;
+        const {name,description,author,price,numClasses,category} = request.body;
         
         const [id]= await connection('courses').insert({
             name,
             description,
             author,
             price,
-            numClasses
+            numClasses,
+            category
         });
         
         return response.json({

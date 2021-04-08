@@ -8,6 +8,7 @@ exports.up = function(knex) {
         table.string('author').notNullable();
         table.decimal('price').notNullable();
         table.decimal('numClasses').notNullable();
+        table.string('category').notNullable();
     });
   };
   

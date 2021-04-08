@@ -1,4 +1,5 @@
 import React,{useState} from 'react';
+import {useHistory} from 'react-router-dom';
 import './styles.css';
 import loginCelebration from '../../assets/LoginCelebration.png';
 import api from '../../services/api';
@@ -8,6 +9,7 @@ export default function SignUp() {
     const[email,setEmail]=useState('');
     const[password,setPassword]=useState('');
     const[cpassword,setCpassword]=useState('');
+    const history = useHistory();
 
     function changeButtonColor(){
         if(document.getElementById('tipouser1').style.backgroundColor === "#a77aed"){
@@ -28,7 +30,7 @@ export default function SignUp() {
         };
         try{
         const response = await api.post('users',data);
-        alert(`Cadastro Realizado com Sucesso! ID:${response.data.id}`)
+        history.push('/Login');
         }catch(err){
         alert('Erro no Cadastro de Usuário, por favor tente novamente!');
         
@@ -74,13 +76,13 @@ export default function SignUp() {
                         />
 
                         <div className="form-container-h2">
-                            <h2 className="SignUp">Oque você deseja ser?</h2>
+                            <h4 className="SignUp">Oque você deseja ser?</h4>
                         </div>
                         <div className="usertype-container">
                             <button id="tipouser1" onClick={changeButtonColor} type="button" >Professor</button>
                             <button id="tipouser2"onClick={changeButtonColor} type="button">Aluno</button>
                         </div>
-                        <button type="submit">Cadastrar</button>
+                        <button className="button-signup"type="submit">Cadastrar</button>
                         <a href="/login">Já tenho cadastro</a>
 
                     </form>
