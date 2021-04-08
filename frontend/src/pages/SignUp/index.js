@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import {useHistory} from 'react-router-dom';
+import {Link,useHistory} from 'react-router-dom';
 import './styles.css';
 import loginCelebration from '../../assets/LoginCelebration.png';
 import api from '../../services/api';
@@ -83,7 +83,7 @@ export default function SignUp() {
                             <button id="tipouser2"onClick={changeButtonColor} type="button">Aluno</button>
                         </div>
                         <button className="button-signup"type="submit">Cadastrar</button>
-                        <a href="/login">Já tenho cadastro</a>
+                        <Link to='/Login'>Já tenho cadastro</Link>
 
                     </form>
                 </section>

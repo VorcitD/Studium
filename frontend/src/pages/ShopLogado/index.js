@@ -7,10 +7,10 @@ import Misterioso1 from '../../assets/misterioso1.png';
 import Misterioso1j from '../../assets/misterioso1.jpg';
 import SignUp from '../../assets/signup1.png';
 import api from '../../services/api';
+
 export default function ShopLogado() {
-  const [category,setCategory] = useState('marketing');
+  const [category,setCategory] = useState('negocios');
   const [courses,setCourses] = useState([]);
- 
   useEffect(()=>{
     api.get('courses').then(response =>{
       setCourses(response.data)
@@ -21,6 +21,15 @@ export default function ShopLogado() {
     
 
     <div>
+
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+
+      <link type="text/css" rel="stylesheet" href="css/Shop.css"  media="screen,projection"/>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
         <div>
           <div class="navbar-fixed ">
             <nav class='semsombra'>
@@ -112,7 +121,7 @@ export default function ShopLogado() {
 
 
               <div class="collection">
-                <button class="collection-item textoPadrao">                
+                <a onClick={()=> setCategory('negocios')} class="collection-item textoPadrao">                
                   <div class="row  tiraMargem">
                     <div class="col s6 m3">
                       <i class="material-icons prefix">business_center</i>
@@ -121,9 +130,9 @@ export default function ShopLogado() {
                       Negócios
                     </div>
                   </div> 
-                  </button>
+                  </a>
 
-                <a href="#!" class="collection-item textoPadrao">
+                <a onClick={()=> setCategory('marketing')} class="collection-item textoPadrao">
                   <div class="row  tiraMargem">
                     <div class="col s6 m3">
                       <i class="material-icons prefix">dashboard</i>
@@ -133,7 +142,7 @@ export default function ShopLogado() {
                     </div>
                   </div> </a>
 
-                <a href="#!" class="collection-item textoPadrao">
+                <a onClick={()=> setCategory('ti')} class="collection-item textoPadrao">
                   <div class="row  tiraMargem">
                     <div class="col s6 m3">
                       <i class="material-icons prefix">computer</i>
@@ -143,7 +152,7 @@ export default function ShopLogado() {
                     </div>
                   </div> </a>
 
-                <a href="#!" class="collection-item textoPadrao">
+                <a onClick={()=> setCategory('programacao')} class="collection-item textoPadrao">
                   <div class="row  tiraMargem">
                     <div class="col s6 m3">
                       <i class="material-icons prefix">code</i>
@@ -153,7 +162,7 @@ export default function ShopLogado() {
                     </div>
                   </div> </a>
 
-                <a href="#!" class="collection-item textoPadrao">
+                <a onClick={()=> setCategory('culinaria')} class="collection-item textoPadrao">
                   <div class="row  tiraMargem">
                     <div class="col s6 m3">
                       <i class="material-icons prefix">restaurant</i>
@@ -163,7 +172,7 @@ export default function ShopLogado() {
                      </div>
                   </div> </a>
 
-                <a href="#!" class="collection-item textoPadrao">
+                <a onClick={()=> setCategory('educacao')} class="collection-item textoPadrao">
                   <div class="row  tiraMargem">
                     <div class="col s6 m3">
                       <i class="material-icons prefix">book</i>
@@ -173,7 +182,7 @@ export default function ShopLogado() {
                     </div>
                   </div> </a>
 
-                <a href="#!" class="collection-item textoPadrao">
+                <a onClick={()=> setCategory('fotografia')} class="collection-item textoPadrao">
                   <div class="row  tiraMargem">
                     <div class="col s6 m3">
                       <i class="material-icons prefix">camera_alt</i>
@@ -183,7 +192,7 @@ export default function ShopLogado() {
                     </div>
                   </div> </a>
 
-                <a href="#!" class="collection-item textoPadrao">
+                <a onClick={()=> setCategory('idiomas')} class="collection-item textoPadrao">
                   <div class="row  tiraMargem">
                     <div class="col s6 m3">
                       <i class="material-icons prefix">language</i>
@@ -193,7 +202,7 @@ export default function ShopLogado() {
                    </div>
                   </div> </a>
 
-                <a href="#!" class="collection-item textoPadrao">
+                <a onClick={()=> setCategory('saude')} class="collection-item textoPadrao">
                   <div class="row  tiraMargem">
                     <div class="col s6 m3">
                       <i class="material-icons prefix">local_hospital</i>
@@ -203,7 +212,7 @@ export default function ShopLogado() {
                    </div>
                   </div> </a>
 
-                <a href="#!" class="collection-item textoPadrao">
+                <a onClick={()=> setCategory('musica')} class="collection-item textoPadrao">
                   <div class="row  tiraMargem">
                     <div class="col s6 m3">
                       <i class="material-icons prefix">music_note</i>
@@ -220,80 +229,35 @@ export default function ShopLogado() {
           
     <div className="col s2 m8">
           <div class="row">
-
-
-            <div class="col s12 m12">
-              <div class="card horizontal ">
-                <div class="card-image cardImagem">
-                  <img src={Cursos} />
-                </div>
-                <div class="card-stacked">
-                  <div class="card-content">
-                    <div class="textTituloCartao"><a href="#">Como montar um Software</a></div>
-                    <p> Professora Andressa</p> <br></br> <p> 30 horas</p>
-
+            
+            {courses.map(courses => {
+              if(courses.category==category){
+              return(
+                <div class="col s12 m12" key={courses.id}>
+                <div class="card horizontal ">
+                  <div class="card-image cardImagem">
+                    <img src={Cursos} />
                   </div>
-                  <div class="textPreco" >
-                    <p>R$ 60,00</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col s12 m12">
-              <div class="card horizontal ">
-                <div class="card-image cardImagem">
-                  <img src={Cursos} />
-                </div>
-                <div class="card-stacked">
-                  <div class="card-content">
-                    <div class="textTituloCartao"><a href="#">Como montar um Site</a></div>
-                    <p> Professor André</p> <br></br> <p>15 horas</p>
-
-                  </div>
-                  <div class="textPreco" >
-                    <p>R$ 40,00</p>
+                  <div class="card-stacked">
+                    <div class="card-content">
+                      <div class="textTituloCartao"><a href="#">{courses.name}</a></div>
+                      <p> {courses.author}</p> <br></br> <p> {courses.description}</p>
+  
+                    </div>
+                    <div class="textPreco" >
+                      <p>R${courses.price},00</p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div class="col s12 m12">
-              <div class="card horizontal ">
-                <div class="card-image cardImagem">
-                  <img src={Cursos} />
-                </div>
-                <div class="card-stacked">
-                  <div class="card-content">
-                    <div class="textTituloCartao"><a href="#">Como montar um Backend</a></div>
-                    <p> Professor Victor</p> <br></br><p>30 horas</p>
+              )}else{
+                return(
+                  <div>
 
                   </div>
-                  <div class="textPreco" >
-                    <p>R$ 50,00</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col s12 m12">
-              <div class="card horizontal ">
-                <div class="card-image cardImagem">
-                  <img src={Cursos} />
-                </div>
-                <div class="card-stacked">
-                  <div class="card-content">
-                    <div class="textTituloCartao"><a href="#">Como montar um Banco de Dados</a></div>
-                    <p> Professora Deisymar</p> <br></br><p>90 horas</p>
-
-                  </div>
-                  <div class="textPreco" >
-                    <p>R$ 70,00</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
+                );
+              }
+            })}
           </div>
           </div>
           </div>

@@ -18,8 +18,14 @@ export default function Home() {
   
 
   return (
+    <div>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
 
-    <body>
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+
+  <link type="text/css" rel="stylesheet" href="css/index.css" media="screen,projection" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
       <div className="body">
       <div class="navbar-fixed ">
@@ -212,7 +218,7 @@ export default function Home() {
               <p class=" center "> Seja um aluno e tenha acesso a nossa plataforma de estudos com cursos de qualidade.</p>
             </div>
             <div class="row ">
-              <a class="waves-effect  waves-light btn-large deep-purple lighten-2">Torne-se aluno</a>
+              <Link class="waves-effect  waves-light btn-large deep-purple lighten-2" to='/SignUp'>Torne-se aluno</Link>
             </div>
           </div>
 
@@ -316,8 +322,7 @@ export default function Home() {
 
 
       </div>
-    </body>
-
+      </div>
 
   );
 }
