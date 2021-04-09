@@ -5,9 +5,9 @@ exports.up = function(knex) {
         table.string('url').notNullable();
         table.string('title').notNullable();
 
-        table.string('modules_id').notNullable();
+        table.string('Course_id').notNullable();
 
-        table.foreign('modules_id').references('id').inTable('modules');
+        table.foreign('Course_id').references('id').inTable('course');
     });
 };
 

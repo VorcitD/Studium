@@ -9,7 +9,7 @@ export default function Routes(){
     return(
         <BrowserRouter>
         <Switch>
-            <Route path='/CourseSpace' component={CourseSpace}></Route>
+            <Route path='/CourseSpace/:Course_id' component={CourseSpace}></Route>
             <Route path ="/Login" component={Login}></Route>
             <Route path ="/Shop" component={ShopLogado}></Route>
             <Route path = "/SignUp" component={SignUp}></Route>

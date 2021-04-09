@@ -99,3 +99,16 @@ font-weight: bold !important;
 .tamanhoCard{
  height: 400px !important;
 }
+
+#cardDestaque{
+  cursor: pointer;
+}
+#cardDestaque1{
+  cursor: pointer;
+}
+#cardDestaque2{
+  cursor: pointer;
+}
+#cardDestaque3{
+  cursor: pointer;
+}

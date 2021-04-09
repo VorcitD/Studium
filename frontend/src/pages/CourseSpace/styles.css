@@ -119,3 +119,7 @@
  .nav-ul-a-pers{
      padding-top: 15px !important;
  }
+
+ .CardDestaque{
+    cursor: pointer;
+ }
