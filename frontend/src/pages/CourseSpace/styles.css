@@ -1,125 +1,223 @@
- 
- .logostudium{
-    font-family: "trebuchet MS" !important;
-    font-size: 40px !important;
-    font-weight: bolder !important;
-    margin-left:  40px !important;
-  }
-  .semsombra{
-    box-shadow:  unset !important;
-  }
- 
- 
-  .logostudiumLogin{
-    font-family: "trebuchet MS" !important;
-    font-size: 40px !important;
-    font-weight: bold !important;
-    color: #9575cd !important;
-  }
- 
-  .textoPadrao{
-    font-family: "trebuchet MS" !important;
-    font-size: 14px !important;
-    color:#9575cd !important;
-  }
- 
-  .corPadrao{
-   background-color: #9575cd !important;
+ .logostudium {
+   font-family: "trebuchet MS" !important;
+   font-size: 40px !important;
+   font-weight: bolder !important;
+   margin-left: 40px !important;
  }
-  .textoConcluido{
-    font-family: "trebuchet MS" !important;
-    font-size: 14px !important;
-    color:#03e55d !important;
-  }
-   .textoPendente{
-    font-family: "trebuchet MS" !important;
-    font-size: 14px !important;
-    color:#545454 !important;
-  }
- 
- 
- .btnCadastrar{
-  height: 40px !important;
-  text-align: center !important;
+
+ .semsombra {
+   box-shadow: unset !important;
  }
- 
- 
+
+
+ .logostudiumLogin {
+   font-family: "trebuchet MS" !important;
+   font-size: 40px !important;
+   font-weight: bold !important;
+   color: #FFA726 !important;
+ }
+
+ .textoPadrao {
+   font-family: "trebuchet MS" !important;
+   font-size: 14px !important;
+   color: #FFA726 !important;
+ }
+
+ .corPadrao {
+   background-color: #FFA726 !important;
+ }
+
+ .textoConcluido {
+   font-family: "trebuchet MS" !important;
+   font-size: 14px !important;
+   color: #03e55d !important;
+ }
+
+ .textoPendente {
+   font-family: "trebuchet MS" !important;
+   font-size: 14px !important;
+   color: #545454 !important;
+ }
+
+
+ .btnCadastrar {
+   height: 40px !important;
+   text-align: center !important;
+ }
+
+
  /*Rodape*/
- .rodapeBackground{
+ .rodapeBackground {
    background-image: url("../../assets/homeFooter.png") !important;
    background-color: unset !important;
-   height: 600px !important;
    background-size: cover;
  }
- .rodapeAlinhamento{
+
+ .rodapeAlinhamento {
    margin-top: 300px !important;
  }
- 
- 
- 
+
+
+
  /*Card*/
- 
- .cardImagem{
+
+ .cardImagem {
    width: 300px !important;
    min-width: 300px !important;
  }
- 
- 
+
+
  /*Text Titulo*/
- 
- .textDestaque{
-  font-family: "trebuchet MS" !important;
-  font-size: 35px !important;
-  font-weight: bold !important;
-  margin-left: 30px !important;
- }
- 
- /*Texto Titulo Cartao*/
- .textTituloCartao{
-  font-family: "trebuchet MS" !important;
-  font-size: 25px !important;
-  font-weight: bold !important;
- }
- 
- 
- /*Lista Pesquisa*/
- 
- .listaPesquisa{
-   border-style: solid;
-   border-width: 1px;
-   border-color: #9575cd !important;
- }
- 
- /* Tira Margem da Lista de pesquisa*/
- 
- .tiraMargem{
-   margin: 0px !important;
- }
- 
- 
- /* Tamanho do Card */
- 
- .tamanhoCard{
-   height: 400px !important;
- }
- 
- .btnProximoModulo{
-   align-content: center;
-   border: #9575cd;
- }
- 
- .tamanhoCardEtapas{
-   min-width: 300px !important;
-   
- }
- .tamanhoMinimoRow{
-   min-width: 900px !important ;
- }
- 
- .nav-ul-a-pers{
-     padding-top: 15px !important;
+
+ .textDestaque {
+   font-family: "trebuchet MS" !important;
+   font-size: 35px !important;
+   font-weight: bold !important;
+   margin-left: 30px !important;
  }
 
- .CardDestaque{
-    cursor: pointer;
+ /*Texto Titulo Cartao*/
+ .textTituloCartao {
+   font-family: "trebuchet MS" !important;
+   font-size: 25px !important;
+   font-weight: bold !important;
  }
+
+
+ /*Lista Pesquisa*/
+
+ .listaPesquisa {
+   border-style: solid;
+   border-width: 1px;
+   border-color: #FFA726 !important;
+ }
+
+ /* Tira Margem da Lista de pesquisa*/
+
+ .tiraMargem {
+   margin: 0px !important;
+ }
+
+
+ /* Tamanho do Card */
+
+ .tamanhoCard {
+   height: 400px !important;
+ }
+
+ .btnProximoModulo {
+   align-content: center;
+   border: #FFA726;
+ }
+
+ .tamanhoCardEtapas {
+   min-width: 300px !important;
+
+ }
+
+ .tamanhoMinimoRow {
+   min-width: 900px !important;
+ }
+
+ .nav-ul-a-pers {
+   padding-top: 15px !important;
+ }
+
+ .CardDestaque {
+   cursor: pointer;
+ }
+
+ .course-space-container {
+   width: 100%;
+ }
+
+ .course-space-header {
+   width: 100%;
+   height: 300px;
+   background-image: url('../../assets/CourseSpaceImg.png');
+   background-size: 100% 300px;
+   display: flex;
+   align-items: center;
+   padding: 150px;
+ }
+
+ .course-img {
+   margin-left: 200px !important;
+   margin-right: 0 !important;
+   margin-top: 90px;
+   width: 15vw;
+   height: 15vw;
+   border: 10px solid white;
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+ }
+
+ h1 {
+   color: aliceblue;
+   font-weight: 500;
+ }
+
+ h4 {
+   color: aliceblue;
+ }
+
+ .title-container {
+   display: flex;
+   flex-direction: column;
+   width: 50%;
+   align-items: center;
+ }
+
+ .course-description-wrapper {
+   width: 100%;
+   margin-top: 100px;
+   display: flex;
+   align-items: flex-start;
+   justify-content: center;
+ }
+
+ .course-description-container {
+   width: 40%;
+ }
+
+ .description-title {
+   margin-bottom: 15px;
+ }
+
+ .description-title h5 {
+   font-weight: 700px !important;
+ }
+
+ .description-text {
+   margin-bottom: 40px;
+   font-weight: 400;
+   font-size: 18px;
+ }
+
+ .price-container {
+   padding: 10px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+   width: 20%;
+   background-color: white;
+   height: 170px;
+   border: 10px solid white;
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+   padding-bottom: 10px;
+   margin-left: 50px;
+ }
+
+ .price-container h5 {
+   font-size: 35px;
+   margin-bottom: 30px;
+ }
+
+ .price-container a{
+   display: flex;
+ }
+
+.whatsapp{
+  max-width: 80%;
+  align-self: center;
+}

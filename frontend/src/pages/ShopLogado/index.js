@@ -41,8 +41,8 @@ export default function ShopLogado() {
       <div>
         <div class="navbar-fixed ">
           <nav class='semsombra'>
-            <div class="nav-wrapper  deep-purple lighten-2">
-              <a href="#!" class="brand-logo logostudium">studium.</a>
+            <div class="nav-wrapper orange lighten-2">
+              <a href="/" class="brand-logo logostudium">A Janela Mágica</a>
               <ul class="right hide-on-med-and-down">
               </ul>
             </div>

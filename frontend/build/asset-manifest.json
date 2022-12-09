@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cb17591b.chunk.css",
+    "main.js": "/static/js/main.5a026821.chunk.js",
+    "main.js.map": "/static/js/main.5a026821.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c60b7f5c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c60b7f5c.js.map",
+    "static/js/2.36863386.chunk.js": "/static/js/2.36863386.chunk.js",
+    "static/js/2.36863386.chunk.js.map": "/static/js/2.36863386.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.cb17591b.chunk.css.map": "/static/css/main.cb17591b.chunk.css.map",
+    "static/js/2.36863386.chunk.js.LICENSE.txt": "/static/js/2.36863386.chunk.js.LICENSE.txt",
+    "static/media/Acme.48358ee1.jpg": "/static/media/Acme.48358ee1.jpg",
+    "static/media/Alura.04d33c45.png": "/static/media/Alura.04d33c45.png",
+    "static/media/Cursos.e56c6eab.png": "/static/media/Cursos.e56c6eab.png",
+    "static/media/LoginCelebration.5a705276.png": "/static/media/LoginCelebration.5a705276.png",
+    "static/media/Rocket.931c619e.png": "/static/media/Rocket.931c619e.png",
+    "static/media/home1.1e7f1033.png": "/static/media/home1.1e7f1033.png",
+    "static/media/home2.ca7f2902.png": "/static/media/home2.ca7f2902.png",
+    "static/media/home3.ba76ccd4.png": "/static/media/home3.ba76ccd4.png",
+    "static/media/styles.css": "/static/media/homeFooter.1d73f0da.png",
+    "static/media/signup1.5a705276.png": "/static/media/signup1.5a705276.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c60b7f5c.js",
+    "static/js/2.36863386.chunk.js",
+    "static/css/main.cb17591b.chunk.css",
+    "static/js/main.5a026821.chunk.js"
+  ]
+}

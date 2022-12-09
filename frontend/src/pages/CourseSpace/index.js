@@ -1,25 +1,24 @@
 import React, { useEffect, useState } from 'react';
-import { useHistory, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import WhatsAppButtonGreenMedium from '../../assets/WhatsAppButtonGreenLarge.png';
+import Cursos from '../../assets/Cursos.png'
 import './styles.css';
 import api from '../../services/api';
 
 export default function CourseSpace() {
 
-  const [courses, setCourses] = useState({name:"",description:"",author:"",price:"",numClasses:"",category:""});
-  const [videos, setVideos] = useState([]);
-  const [selectedV, setSelectedV] = useState({id:"",title:"",url:""});
-  const [cont, setCont] = useState(1);
-  const [cont1, setCont1] = useState(1);
+  const [courses, setCourses] = useState({ name: "", description: "", author: "", price: "", numClasses: "", category: "" });
+  const [, setVideos] = useState([]);
+  const [selectedV, setSelectedV] = useState({ id: "", title: "", url: "" });
   const { Course_id } = useParams();
-  var contador = 0;
   useEffect(() => {
     api.get(`courseSpace/${Course_id}`).then(response => {
       const { course, video } = response.data;
       setCourses(course);
       setVideos(video);
     })
-      console.log(selectedV);
+    console.log(selectedV);
 
   }, [Course_id]);
 
@@ -27,11 +26,11 @@ export default function CourseSpace() {
 
 
 
- function HandleFrame(selection){
-   setSelectedV(selection);
-  console.log(selection)
-  var newframe = document.querySelector('.framenova');
-  newframe.innerHTML=`<div class="row">
+  function HandleFrame(selection) {
+    setSelectedV(selection);
+    console.log(selection)
+    var newframe = document.querySelector('.framenova');
+    newframe.innerHTML = `<div class="row">
   <div class="col s12">
     <span class="card-title">${selection.title}</span>
     <div class="video-container">
@@ -39,12 +38,11 @@ export default function CourseSpace() {
     </div>
   </div>
 </div>`;
-  var a = document.querySelector('#CourseTitleNew');
-  
-  a.innerHTML=`<p class="flow-text textDestaque">${courses.name} </p>`;
+    var a = document.querySelector('#CourseTitleNew');
 
-  
- }
+    a.innerHTML = `<p class="flow-text textDestaque">${courses.name} </p>`;
+
+  }
 
 
 
@@ -75,9 +73,9 @@ export default function CourseSpace() {
 
       <div class="navbar-fixed ">
         <nav>
-          <div class="nav-wrapper deep-purple lighten-2">
-            <a href="index.html" class="brand-logo logostudium">studium.</a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <div class="nav-wrapper orange lighten-1  ">
+            <a href="/Shop" class="brand-logo logostudium">A Janela Mágica</a>
+            <a href="/Shop" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
               <li><a href="sass.html"><i class="material-icons">search</i></a></li>
               <li><Link class="waves-effect waves-light" to='/Shop'>CURSOS</Link></li>
@@ -97,100 +95,47 @@ export default function CourseSpace() {
       </ul>
 
 
-      <div class="row" id="CourseTitleNew">
-        
-      </div>
-
-
-      <div class="row tamanhoMinimoRow">
-        <div class='col s12 m2 tamanhoCardEtapas'>
-
-          <div class="row">
-            <div class="col s12 m12">
-              <div class="card ">
-                <div class="card-content white-text">
-
-
-                  {videos.map((videos) => {
-                    if (contador < cont) {
-                      contador++
-                      return (<div onClick={()=>HandleFrame(videos)}>
-                        <a class="collection-item textoConcluido">
-                          <div class="row  tiraMargem">
-                            <div class="col s1 m2">
-                              <i class="material-icons prefix">check_circle</i>
-                            </div>
-                            <div class="col s9 m9 left">
-                              {videos.title}
-                            </div>
-                          </div>
-                        </a>
-                        <div class="collection-item textoConcluido">
-                          <div class="row  tiraMargem">
-                            <div class="col s1 m2">
-                              <i class="material-icons prefix">arrow_downward</i>
-                            </div>
-                          </div>
-                        </div>
-
-                      </div>)
-                    } else {
-                      return(<a onClick={()=>HandleFrame(videos)}  class="collection-item textoPendente">
-                        <div class="row  tiraMargem">
-                          <div class="col s1 m2">
-                            <i class="material-icons prefix">play_circle_outline</i>
-                          </div>
-                          <div class="col s6 m9">
-                            {videos.title}
-                </div>
-                        </div>
-                      </a>)
-                    }
-                  })
-
-                  }
-
-
-
-
-
-
-
-                </div>
-              </div>
-            </div>
+      <div class="course-space-container">
+        <div class="course-space-header">
+          <img class="course-img" src={Cursos}></img>
+          <div class="title-container">
+            <h1>Aulas de Jiu-Jitsu</h1>
+            <h4 >Professor piriri</h4>
           </div>
         </div>
 
+        <div class="course-description-wrapper">
+          <div class="course-description-container">
+            <h5 class="description-title">
+              Informações sobre o curso:
+            </h5>
 
+            <p class="description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-        <div class=' col s12 m8'>
-          <div class="row">
-            <div class="col s12 m12">
-              <div class="card tamanhoCardEtapas">
-                <div class="card-content textoPendente">
+            <h5 class="description-title">
+              O que você vai aprender nesse curso:
+            </h5>
+            <p class="description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-                  <div className="framenova">
-                  </div>
-                  
-                  <div class="row">
-                    <div class="col s12">
-                      <a class="waves-effect waves-light btn btnCadastrar deep-purple darken-4 right" href="#!"> Baixar Video</a>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-
-
+            <h5 class="description-title">
+              Requisitos para o curso:
+            </h5>
+            <p class="description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
           </div>
+          <div class="price-container">
+            <h5>R$120,00/mês</h5>
+            <a aria-label="Tenho interesse!"
+              href="https://wa.me/5562999189082?text=Tenho%20interesse%20em%20um%20curso%20que%20vocês%20oferecem!">
+              <img class="whatsapp"
+                alt="Chat on WhatsApp"
+                src={WhatsAppButtonGreenMedium} />
+            </a>
+          </div>
+
+
         </div>
-
       </div>
-
-
 
       <footer class="page-footer rodapeBackground">
         <div class="rodapeAlinhamento">

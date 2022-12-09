@@ -11,15 +11,6 @@ export default function SignUp() {
     const[cpassword,setCpassword]=useState('');
     const history = useHistory();
 
-    function changeButtonColor(){
-        if(document.getElementById('tipouser1').style.backgroundColor === "#a77aed"){
-        document.getElementById('tipouser1').style.backgroundColor = "#dcdce6";
-    }else{
-        document.getElementById('tipouser1').style.backgroundColor = "#a77aed";
-    }
-    
-    }
-
     async function handleSignUp(e){
         e.preventDefault();//impedir que a página recarregue quando o botão for pressionado
         const data={
@@ -75,13 +66,6 @@ export default function SignUp() {
                         onChange={e=>setCpassword(e.target.value)} 
                         />
 
-                        <div className="form-container-h2">
-                            <h4 className="SignUp">Oque você deseja ser?</h4>
-                        </div>
-                        <div className="usertype-container">
-                            <button id="tipouser1" onClick={changeButtonColor} type="button" >Professor</button>
-                            <button id="tipouser2"onClick={changeButtonColor} type="button">Aluno</button>
-                        </div>
                         <button className="button-signup"type="submit">Cadastrar</button>
                         <Link to='/Login'>Já tenho cadastro</Link>
 

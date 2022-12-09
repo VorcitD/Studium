@@ -38,7 +38,7 @@
   
   a:hover {
       text-decoration: none;
-    color: #d501ff;
+    color: #0000009a ;
   }
   
   /*---------------------------------------------*/
@@ -148,11 +148,11 @@
     justify-content: center;
     align-items: center;
     padding: 15px;
-    background: #9053c7;
-    background: -webkit-linear-gradient(-135deg, #c850c0, #4158d0);
-    background: -o-linear-gradient(-135deg, #c850c0, #4158d0);
-    background: -moz-linear-gradient(-135deg, #c850c0, #4158d0);
-    background: linear-gradient(-135deg, #c850c0, #4158d0);
+    background: #FFA726 ;
+    background: -webkit-linear-gradient(to bottom left, #ff9900 0%, #ffcc66 100%);
+    background: -o-linear-gradient(to bottom left, #ff9900 0%, #ffcc66 100%);
+    background: -moz-linear-gradient(to bottom left, #ff9900 0%, #ffcc66 100%);
+    background: linear-gradient(to bottom left, #ff9900 0%, #ffcc66 100%);
   }
   
   .wrap-login100 {
@@ -238,7 +238,7 @@
     width: 100%;
     height: 100%;
     box-shadow: 0px 0px 0px 0px;
-    color: rgba(87,184,70, 0.8);
+    color: #FFA726;
   }
   
   .input100:focus + .focus-input100 {
@@ -286,7 +286,7 @@
   }
   
   .input100:focus + .focus-input100 + .symbol-input100 {
-    color: #57b846;
+    color: #FFA726;
     padding-left: 28px;
   }
   
@@ -314,7 +314,7 @@
     width: 100%;
     height: 50px;
     border-radius: 25px;
-    background: #a77aed;
+    background: #FFA726;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;

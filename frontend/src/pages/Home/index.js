@@ -15,7 +15,6 @@ import ModalLogin from '../../components/ModalLogin/index';
 
 export default function Home() {
   const [isModalVisible, setIsModalVisible] = useState(false);
-  
 
   return (
     <div>
@@ -30,11 +29,11 @@ export default function Home() {
       <div className="body">
       <div class="navbar-fixed ">
         <nav class='semsombra'>
-          <div class="nav-wrapper  deep-purple lighten-2">
-            <a href="#!" class="brand-logo logostudium">studium.</a>
+          <div class="nav-wrapper  orange lighten-1">
+            <a href="#!" class="brand-logo logostudium">A Janela Mágica.</a>
             <ul class="right hide-on-med-and-down">
-              <Link to="/Login" class="waves-effect waves-light btn btnCadastrar  deep-purple darken-4">ENTRAR</Link>
-              <Link to="/SignUp" class="waves-effect waves-light btn btnCadastrar  deep-purple darken-4">CADASTRAR</Link>
+              <Link to="/Login" class="waves-effect waves-light btn btnCadastrar  orange darken-3">ENTRAR</Link>
+              <Link to="/SignUp" class="waves-effect waves-light btn btnCadastrar  orange darken-3">CADASTRAR</Link>
             </ul>
           </div>
         </nav>
@@ -45,7 +44,7 @@ export default function Home() {
       <img class="responsive-img " src={home1} alt="home1" />
 
 
-      <p class="flow-text center textDestaque">Como funciona nossa plataforma</p>
+      <p class="flow-text center textDestaque">Venha conhecer nossa escola!</p>
 
 
       <div class="row center  container cardalinhamento">
@@ -59,10 +58,10 @@ export default function Home() {
               <img src={medal} alt="medalha"></img>
 
 
-              <span class="card-title">Desbloqueie conquistas</span>
-              <p>Destrave conquistas e ganhe mais pontos.</p>
+              <span class="card-title">Conquiste seus objetivos</span>
+              <p>Nosso objetivo é te dar as mãos e apresentar alívio com soluções para os seus problemas pessoais e profissionais.</p>
             </div>
-            <div class="cardbordainferior deep-purple lighten-2" >
+            <div class="cardbordainferior orange lighten-1" >
 
             </div>
           </div>
@@ -76,10 +75,10 @@ export default function Home() {
               <img src={scoins} alt="scoins" />
 
 
-              <span class="card-title">Ganhe pontos e troque por descontos</span>
-              <p>Durante o seu aprendizado você ganha pontos que podem ser trocados por descontos em outros cursos.</p>
+              <span class="card-title">Preços Acessíveis</span>
+              <p>Somos uma instituição sem fins lucrativos! Você só pagará pelo preço que o professor cobrar!</p>
             </div>
-            <div class="cardbordainferior  deep-purple lighten-2" >
+            <div class="cardbordainferior  orange lighten-1" >
 
             </div>
           </div>
@@ -96,10 +95,10 @@ export default function Home() {
               <img src={crowns} alt="coroa" />
 
 
-              <span class="card-title">Fique no topo</span>
-              <p>Domine o rank e mostre o quão estudioso você é!.</p>
+              <span class="card-title">Seja sua melhor versão</span>
+              <p>Com nossas aulas de inteligência emocinal, nos da Janela Mágica prometemos te surpreender e transformar.</p>
             </div>
-            <div class="cardbordainferior deep-purple lighten-2" >
+            <div class="cardbordainferior orange lighten-1" >
 
             </div>
           </div>
@@ -114,7 +113,7 @@ export default function Home() {
 
 
         <div class="col s12">
-          <div class="card-panel deep-purple lighten-5">
+          <div class="card-panel orange lighten-5">
 
             <div class="row">
               <p class="flow-text center textDestaque">O que mais a gente oferece</p>
@@ -122,7 +121,7 @@ export default function Home() {
 
             <div class="row  cardalinhamento">
 
-              <div class="col s12 deep-purple lighten-5">
+              <div class="col s12 orange lighten-5">
 
                 <div class="card-content black-text ">
 
@@ -133,14 +132,14 @@ export default function Home() {
                   <p>I am a very simple card. I am good at containing small bits of information.
                             I am convenient because I require little markup to use effectively.</p>
                 </div>
-                <div class="card-action  deep-purple lighten-2" >
+                <div class="card-action  orange lighten-1" >
 
                 </div>
               </div>
 
 
 
-              <div class="col s12 deep-purple lighten-5">
+              <div class="col s12 orange lighten-5">
                 <div class="card-content black-text">
 
 
@@ -150,12 +149,12 @@ export default function Home() {
                   <p>I am a very simple card. I am good at containing small bits of information.
                             I am convenient because I require little markup to use effectively.</p>
                 </div>
-                <div class="card-action  deep-purple lighten-2" >
+                <div class="card-action  orange lighten-1" >
 
                 </div>
               </div>
 
-              <div class="col s12 deep-purple lighten-5">
+              <div class="col s12 orange lighten-5">
                 <div class="card-content black-text">
 
 
@@ -165,12 +164,12 @@ export default function Home() {
                   <p>I am a very simple card. I am good at containing small bits of information.
                             I am convenient because I require little markup to use effectively.</p>
                 </div>
-                <div class="card-action  deep-purple lighten-2" >
+                <div class="card-action  orange lighten-1" >
 
                 </div>
               </div>
 
-              <div class="col s12  deep-purple lighten-5">
+              <div class="col s12  orange lighten-5">
                 <div class="card-content black-text">
 
 
@@ -180,7 +179,7 @@ export default function Home() {
                   <p>I am a very simple card. I am good at containing small bits of information.
                             I am convenient because I require little markup to use effectively.</p>
                 </div>
-                <div class="card-action  deep-purple lighten-2" >
+                <div class="card-action  orange lighten-1" >
 
                 </div>
               </div>
@@ -199,17 +198,17 @@ export default function Home() {
 
       <div class="row center sejaumAluno">
 
-        <div class="col s12 m8 ">
+        <div class="col s12 m6 ">
 
           <div class="card-content black-text ">
-            <img src={home2} alt="home2" />
+            <img src={home2} alt="home2"/>
           </div>
 
         </div>
 
 
 
-        <div class="col s12 m4 ">
+        <div id="seja-um-aluno-card"  class="col s12 m6 ">
           <div class="card-content black-text">
             <div class="row ">
               <p class=" center textDestaque"> Seja um aluno</p>
@@ -218,7 +217,7 @@ export default function Home() {
               <p class=" center "> Seja um aluno e tenha acesso a nossa plataforma de estudos com cursos de qualidade.</p>
             </div>
             <div class="row ">
-              <Link class="waves-effect  waves-light btn-large deep-purple lighten-2" to='/SignUp'>Torne-se aluno</Link>
+              <Link class="waves-effect  waves-light btn-large orange lighten-1" to='/SignUp'>Torne-se aluno</Link>
             </div>
           </div>
 
@@ -232,7 +231,7 @@ export default function Home() {
       <div class="row center sejaumAluno">
 
 
-        <div class="col s12 m4 ">
+        <div id="seja-um-professor-card"  class="col s12 m6 ">
           <div class="card-content black-text">
             <div class="row ">
               <p class=" center textDestaque"> Seja um professor</p>
@@ -241,14 +240,14 @@ export default function Home() {
               <p class=" center "> Seja um professor compartilhando seus conhecimentos tendo o suporte necessário para suas aulas.</p>
             </div>
             <div class="row ">
-              <a class="waves-effect  waves-light btn-large deep-purple lighten-2">Torne-se professor</a>
+              <a class="waves-effect  waves-light btn-large orange lighten-1">Torne-se professor</a>
             </div>
           </div>
 
         </div>
 
 
-        <div class="col s12 m8 ">
+        <div class="col s12 m6 ">
 
           <div class="card-content black-text ">
             <img src={home3} alt="home 3" />
